@@ -13,7 +13,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    val data = mutableListOf("布局用behavior", "嵌套")
+    val data = mutableListOf("布局用behavior", "嵌套", "用户详情页")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -43,6 +43,7 @@ class MainActivity : AppCompatActivity() {
                 when(index){
                     0 -> ViewOffsetActivity.startToMe(itemView.context)
                     1 -> ViewPagerActivity.startToMe(itemView.context)
+                    2 -> HeaderImageActivity.startToMe(itemView.context)
                     else -> Toast.makeText(itemView.context, "bug", Toast.LENGTH_SHORT).show()
                 }
             }
